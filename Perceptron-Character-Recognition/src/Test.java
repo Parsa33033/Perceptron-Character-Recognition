@@ -44,7 +44,6 @@ public class Test implements Runnable
 			{
 				sumOfInputByW[i] += weights[i][j] * input[j];
 			}//for j each input
-			System.out.println(charSet.get(i) + " sum is: " + sumOfInputByW[i] );
 		}//for each character
 		
 		List<Integer> l = Arrays.stream(sumOfInputByW).boxed().collect(Collectors.toList());
